@@ -1,7 +1,85 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, ExternalLink, Heart, Code, Briefcase, GraduationCap } from "lucide-react"
+import { Github, Linkedin, Mail, Heart, Code, Briefcase, GraduationCap } from "lucide-react"
+import { ProjectCarousel } from "@/components/project-carousel"
+
+// Project data
+const projects = [
+  {
+    id: 1,
+    title: "Messaging Platform",
+    description:
+      "A messaging platform built with Retool and Twilio, enabling individualized or bulk messaging and phone number information lookups",
+    image: "/images/project-1.jpg",
+    bullets: [
+      "Facilitates bulk messaging, automated calls, and conference hosting",
+      "Enables contact management within the Retool interface",
+      "Leveraged Retool Workflows to retrieve carrier, name, and address details",
+    ],
+    technologies: ["Retool", "Twilio", "JavaScript"],
+    githubUrl: "#",
+    demoUrl: "#",
+  },
+  {
+    id: 2,
+    title: "Gift Boutique",
+    description:
+      "Online marketplace that delivers a user-friendly interface for customers to explore and purchase unique gifts",
+    image: "/images/project-2.jpg",
+    bullets: [
+      "Crafted a full stack application using React, Ruby on Rails, and Material UI",
+      "Employed Firebase's authentication for secure login experience",
+      "Ensured high scalability using AWS EC2 and Docker for containerization",
+    ],
+    technologies: ["React", "Ruby on Rails", "Material UI", "Firebase"],
+    githubUrl: "#",
+    demoUrl: "#",
+  },
+  {
+    id: 3,
+    title: "Asian Bites",
+    description:
+      "Comprehensive guide to finding the best Asian restaurants with reviews from a community of food enthusiasts",
+    image: "/images/project-3.jpg",
+    bullets: [
+      "Designed and implemented a full stack application and RESTful API",
+      "Utilized native rails validations and error handling for security",
+      "Enabled secure password hashing and salting with bcrypt",
+    ],
+    technologies: ["Node.js", "React", "Ruby on Rails", "RESTful API"],
+    githubUrl: "#",
+    demoUrl: "#",
+  },
+  {
+    id: 4,
+    title: "YesChef",
+    description: "Full stack application that enables users to browse, search and save recipes",
+    image: "/images/yeschef.jpg",
+    bullets: [
+      "Applied agile methodologies to collaborate with a team of 3 members in the development of a scalable recipe application using React and Sinatra",
+      "Constructed a robust filter functionality which allows users to refine recipe search results based on cooking difficulty, cooking time, and cuisine preferences",
+      "Heightened user interaction by enabling users to indicate their likes and dislikes for recipes, fostering a more personalized experience",
+    ],
+    technologies: ["React", "Sinatra", "JavaScript"],
+    githubUrl: "https://github.com/wendy174/YesChef",
+    demoUrl: "https://www.loom.com/share/ff887918a7c44384894fdfd4be11ee49",
+  },
+  {
+    id: 5,
+    title: "XKCD Comic",
+    description: "Front end application that enables users to explore a diverse collection of 20+ comics",
+    image: "/images/xkcd.jpg",
+    bullets: [
+      "Elevated user interaction by creating a platform that allows user to favorite comics, share comics, and engage in comment threads",
+      "Enhanced user engagement by providing a dedicated page to showcase their favorite comics",
+      "Designed an intuitive interface for browsing and discovering new comics",
+    ],
+    technologies: ["JavaScript", "HTML", "CSS"],
+    githubUrl: "https://github.com/wendy174/XKCDComic",
+    demoUrl: "https://github.com/wendy174/XKCDComic/blob/main/comic.png",
+  },
+]
 
 export default function Home() {
   return (
@@ -62,6 +140,29 @@ export default function Home() {
                   <Button variant="outline" className="text-white border-white hover:bg-white/20">
                     <a href="#contact">Get In Touch</a>
                   </Button>
+                  <Button className="bg-pink-200 text-pink-800 hover:bg-pink-300">
+                    <a href="/resume.pdf" target="_blank" className="flex items-center gap-1" rel="noreferrer">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-file-text"
+                      >
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" x2="8" y1="13" y2="13" />
+                        <line x1="16" x2="8" y1="17" y2="17" />
+                        <line x1="10" x2="8" y1="9" y2="9" />
+                      </svg>
+                      Resume
+                    </a>
+                  </Button>
                 </div>
               </div>
               <div className="flex items-center justify-center">
@@ -70,6 +171,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" aria-label="Go to About section">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-white"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </a>
           </div>
         </section>
 
@@ -130,6 +249,27 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="flex justify-center mt-8">
+              <a
+                href="#skills"
+                className="p-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition-all"
+                aria-label="Go to Skills section"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </a>
             </div>
           </div>
         </section>
@@ -213,6 +353,27 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="flex justify-center mt-8">
+              <a
+                href="#projects"
+                className="p-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition-all"
+                aria-label="Go to Projects section"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -229,118 +390,30 @@ export default function Home() {
                   Check out some of my recent projects.
                 </p>
               </div>
-              <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-1 lg:grid-cols-3">
-                <Card className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur">
-                  <div className="aspect-video relative">
-                    <img src="/images/project-1.jpg" alt="Messaging Platform" className="object-cover w-full h-full" />
-                  </div>
-                  <CardHeader>
-                    <CardTitle className="text-pink-600">Messaging Platform</CardTitle>
-                    <CardDescription>
-                      A messaging platform built with Retool and Twilio, enabling individualized or bulk messaging and
-                      phone number information lookups
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                      <li>Facilitates bulk messaging, automated calls, and conference hosting</li>
-                      <li>Enables contact management within the Retool interface</li>
-                      <li>Leveraged Retool Workflows to retrieve carrier, name, and address details</li>
-                    </ul>
-                    <div className="flex flex-wrap gap-2 pt-4">
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Retool</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Twilio</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">JavaScript</Badge>
-                    </div>
-                  </CardContent>
-                  <CardFooter className="flex justify-between">
-                    <Button variant="outline" className="text-pink-600 border-pink-200 hover:bg-pink-50">
-                      <a href="#" className="flex items-center gap-1">
-                        <Github className="h-4 w-4" /> GitHub
-                      </a>
-                    </Button>
-                    <Button className="bg-pink-600 hover:bg-pink-700">
-                      <a href="#" className="flex items-center gap-1">
-                        <ExternalLink className="h-4 w-4" /> Demo
-                      </a>
-                    </Button>
-                  </CardFooter>
-                </Card>
-                <Card className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur">
-                  <div className="aspect-video relative">
-                    <img src="/images/project-2.jpg" alt="Gift Boutique" className="object-cover w-full h-full" />
-                  </div>
-                  <CardHeader>
-                    <CardTitle className="text-pink-600">Gift Boutique</CardTitle>
-                    <CardDescription>
-                      Online marketplace that delivers a user-friendly interface for customers to explore and purchase
-                      unique gifts
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                      <li>Crafted a full stack application using React, Ruby on Rails, and Material UI</li>
-                      <li>Employed Firebase's authentication for secure login experience</li>
-                      <li>Ensured high scalability using AWS EC2 and Docker for containerization</li>
-                    </ul>
-                    <div className="flex flex-wrap gap-2 pt-4">
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">React</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Ruby on Rails</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Material UI</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Firebase</Badge>
-                    </div>
-                  </CardContent>
-                  <CardFooter className="flex justify-between">
-                    <Button variant="outline" className="text-pink-600 border-pink-200 hover:bg-pink-50">
-                      <a href="#" className="flex items-center gap-1">
-                        <Github className="h-4 w-4" /> GitHub
-                      </a>
-                    </Button>
-                    <Button className="bg-pink-600 hover:bg-pink-700">
-                      <a href="#" className="flex items-center gap-1">
-                        <ExternalLink className="h-4 w-4" /> Demo
-                      </a>
-                    </Button>
-                  </CardFooter>
-                </Card>
-                <Card className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur">
-                  <div className="aspect-video relative">
-                    <img src="/images/project-3.jpg" alt="Asian Bites" className="object-cover w-full h-full" />
-                  </div>
-                  <CardHeader>
-                    <CardTitle className="text-pink-600">Asian Bites</CardTitle>
-                    <CardDescription>
-                      Comprehensive guide to finding the best Asian restaurants with reviews from a community of food
-                      enthusiasts
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                      <li>Designed and implemented a full stack application and RESTful API</li>
-                      <li>Utilized native rails validations and error handling for security</li>
-                      <li>Enabled secure password hashing and salting with bcrypt</li>
-                    </ul>
-                    <div className="flex flex-wrap gap-2 pt-4">
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Node.js</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">React</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">Ruby on Rails</Badge>
-                      <Badge className="bg-pink-100 text-pink-600 hover:bg-pink-200">RESTful API</Badge>
-                    </div>
-                  </CardContent>
-                  <CardFooter className="flex justify-between">
-                    <Button variant="outline" className="text-pink-600 border-pink-200 hover:bg-pink-50">
-                      <a href="#" className="flex items-center gap-1">
-                        <Github className="h-4 w-4" /> GitHub
-                      </a>
-                    </Button>
-                    <Button className="bg-pink-600 hover:bg-pink-700">
-                      <a href="#" className="flex items-center gap-1">
-                        <ExternalLink className="h-4 w-4" /> Demo
-                      </a>
-                    </Button>
-                  </CardFooter>
-                </Card>
+              <div className="mx-auto w-full max-w-5xl py-12">
+                <ProjectCarousel projects={projects} />
               </div>
+            </div>
+            <div className="flex justify-center mt-8">
+              <a
+                href="#experience"
+                className="p-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition-all"
+                aria-label="Go to Experience section"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </a>
             </div>
           </div>
         </section>
@@ -416,6 +489,27 @@ export default function Home() {
                   </Card>
                 </div>
               </div>
+            </div>
+            <div className="flex justify-center mt-8">
+              <a
+                href="#education"
+                className="p-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition-all"
+                aria-label="Go to Education section"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </a>
             </div>
           </div>
         </section>
@@ -509,6 +603,27 @@ export default function Home() {
                   </Card>
                 </div>
               </div>
+            </div>
+            <div className="flex justify-center mt-8">
+              <a
+                href="#contact"
+                className="p-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition-all"
+                aria-label="Go to Contact section"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </a>
             </div>
           </div>
         </section>
@@ -652,6 +767,28 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Back to Top Button */}
+      <a
+        href="#"
+        className="fixed bottom-6 right-6 p-3 rounded-full bg-pink-600 text-white shadow-lg hover:bg-pink-700 transition-all z-50"
+        aria-label="Back to top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-chevron-up"
+        >
+          <path d="m18 15-6-6-6 6" />
+        </svg>
+      </a>
     </div>
   )
 }
