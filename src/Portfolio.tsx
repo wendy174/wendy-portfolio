@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, Heart, Code, Briefcase, GraduationCap } from "lucide-react"
+import { Github, Linkedin, Mail, GraduationCap } from "lucide-react"
 import { ProjectCarousel } from "@/components/ProjectsCarousel"
 import profile from './assets/profile.jpeg'; 
 import About from './components/About.tsx'; 
