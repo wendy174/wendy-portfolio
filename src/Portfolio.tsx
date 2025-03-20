@@ -5,6 +5,9 @@ import { Github, Linkedin, Mail, Heart, Code, Briefcase, GraduationCap } from "l
 import { ProjectCarousel } from "@/components/project-carousel"
 import profile from './assets/profile.jpeg'; 
 import cat from './assets/cat.webp'; 
+
+
+
 // Project data
 const projects = [
   {
@@ -83,15 +86,14 @@ const projects = [
 ]
 
 export default function Home() {
+
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b border-pink-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-6 md:gap-10">
-            <a href="#" className="flex items-center space-x-2">
-              <span className="inline-block font-bold text-pink-600">WENDY YEUNG</span>
-            </a>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#about" className="text-sm font-medium transition-colors hover:text-pink-600">
@@ -129,20 +131,17 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl xl:text-6xl/none">
+                  <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl xl:text-6xl/none text-left">
                     Hi, I'm <span className="text-pink-200">Wendy Yeung</span>
                   </h1>
-                  <p className="max-w-[600px] text-white md:text-xl">Software Engineer & Solution Engineer</p>
+                  <p className="max-w-[600px] text-white md:text-xl text-left">Currently Looking for Solution Engineer Role</p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button className="bg-white text-pink-600 hover:bg-pink-100">
                     <a href="#projects">View My Work</a>
                   </Button>
-                  <Button variant="outline" className="text-white border-white hover:bg-white/20">
-                    <a href="#contact">Get In Touch</a>
-                  </Button>
                   <Button className="bg-pink-200 text-pink-800 hover:bg-pink-300">
-                    <a href="/resume.pdf" target="_blank" className="flex items-center gap-1" rel="noreferrer">
+                    <a href="https://docs.google.com/document/d/1UDAqAEMpvZ7AbyWASgQ_s1xICGX0czrb5e5MFTVtY_g/edit?usp=sharing" target="_blank" className="flex items-center gap-1" rel="noreferrer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
