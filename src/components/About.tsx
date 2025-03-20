@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               I'm a software engineer with a background in pharmacy, currently looking for a Solution Engineering
               role where I can combine my technical skills with problem-solving to create impactful solutions. 
-              In my free time, I build demos, experiment with no-code platforms, and explore new tech trends. 
+              In my free time, I build demos, experiment with no-code low-code platforms, and explore new tech trends. 
               Whether it's optimizing systems, integrating APIs, or creating something from scratch, I enjoy 
               the challenge of bringing ideas to life. If you'd like to connect or collaborate, feel free to reach out!
             </p>
