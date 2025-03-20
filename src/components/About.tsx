@@ -31,14 +31,14 @@ const About: React.FC = () => {
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
             {/* Image Section */}
             <div className="flex justify-center">
-              <div className="relative h-[500px] w-[500px] overflow-hidden rounded-2xl border-4 border-pink-200 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-pink-300">
+              <div className="relative h-[400px] w-[400px] overflow-hidden rounded-2xl border-4 border-pink-200 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-pink-300">
                 <img src={cat} alt="About me" className="object-cover w-full h-full" />
               </div>
             </div>
 
             {/* Badges Section */}
-            <div className="flex flex-col justify-center space-y-6">
-              <div className="grid gap-6">
+            <div className="flex flex-col justify-center space-y-">
+              <div className="grid">
                 <AboutBadge
                   icon={<Heart className="h-6 w-6" />}
                   title="Passionate Problem Solver"

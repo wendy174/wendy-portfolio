@@ -10,7 +10,7 @@ const AboutBadge: React.FC<AboutBadgeProps> = ({ icon, title, description }) => 
   return (
     <div className="flex items-center gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-pink-50 w-full">
       {/* Icon Wrapper - Ensuring Equal Shape for All */}
-      <div className="flex h-14 w-14 min-h-[56px] min-w-[56px] items-center justify-center rounded-full bg-gradient-to-br from-pink-400 to-pink-600 text-white shadow-md">
+      <div className="flex h-12 w-12 min-h-[56px] min-w-[56px] items-center justify-center rounded-full bg-gradient-to-br from-pink-400 to-pink-600 text-white shadow-md">
         {icon}
       </div>
 
