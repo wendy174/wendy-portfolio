@@ -3,7 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Heart, Code, Briefcase, GraduationCap } from "lucide-react"
 import { ProjectCarousel } from "@/components/project-carousel"
-
+import profile from './assets/profile.jpeg'; 
+import cat from './assets/cat.webp'; 
 // Project data
 const projects = [
   {
@@ -167,7 +168,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="relative h-[300px] w-[300px] md:h-[400px] md:w-[400px] overflow-hidden rounded-full border-4 border-white shadow-lg">
-                  <img src="/images/profile.jpg" alt="Profile" className="object-cover w-full h-full" />
+                  <img src={profile} alt="Profile" className="object-cover w-full h-full" />
                 </div>
               </div>
             </div>
@@ -208,7 +209,7 @@ export default function Home() {
               <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
                 <div className="flex justify-center">
                   <div className="relative h-[400px] w-[400px] overflow-hidden rounded-2xl border-4 border-pink-200 shadow-lg">
-                    <img src="/images/about-me.jpg" alt="About me" className="object-cover w-full h-full" />
+                    <img src={cat} alt="About me" className="object-cover w-full h-full" />
                   </div>
                 </div>
                 <div className="flex flex-col justify-center space-y-4">
