@@ -134,7 +134,7 @@ export default function Home() {
                   <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl xl:text-6xl/none text-left">
                     Hi, I'm <span className="text-pink-200">Wendy Yeung</span>
                   </h1>
-                  <p className="max-w-[600px] text-white md:text-xl text-left">Currently Looking for Solution Engineer Role</p>
+                  <p className="max-w-[600px] text-white md:text-xl text-left">Open to Solution Engineer Opportunities</p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button className="bg-white text-pink-600 hover:bg-pink-100">
