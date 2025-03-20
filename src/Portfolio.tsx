@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Heart, Code, Briefcase, GraduationCap } from "lucide-react"
-import { ProjectCarousel } from "@/components/project-carousel"
+import { ProjectCarousel } from "@/components/ProjectsCarousel"
 import profile from './assets/profile.jpeg'; 
-import cat from './assets/cat.webp'; 
+import About from './components/About.tsx'; 
 
 
 
@@ -192,87 +192,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Section */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="inline-block rounded-full bg-pink-100 px-3 py-1 text-sm text-pink-600 mb-4">About Me</div>
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-600">Hello, I'm Wendy!</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'm a passionate Software Engineer and Solution Engineer with expertise in both front-end and back-end
-                  technologies. I love creating intuitive and engaging user experiences while ensuring robust and
-                  scalable backend solutions.
-                </p>
-              </div>
-              <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-                <div className="flex justify-center">
-                  <div className="relative h-[400px] w-[400px] overflow-hidden rounded-2xl border-4 border-pink-200 shadow-lg">
-                    <img src={cat} alt="About me" className="object-cover w-full h-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col justify-center space-y-4">
-                  <div className="grid gap-4">
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-100 text-pink-600">
-                        <Heart className="h-5 w-5" />
-                      </div>
-                      <div className="text-left">
-                        <h3 className="font-semibold">Passionate</h3>
-                        <p className="text-sm text-muted-foreground">
-                          About creating intuitive and engaging user experiences
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-100 text-pink-600">
-                        <Code className="h-5 w-5" />
-                      </div>
-                      <div className="text-left">
-                        <h3 className="font-semibold">Full Stack Developer</h3>
-                        <p className="text-sm text-muted-foreground">
-                          Experienced in both front-end and back-end technologies
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-100 text-pink-600">
-                        <Briefcase className="h-5 w-5" />
-                      </div>
-                      <div className="text-left">
-                        <h3 className="font-semibold">Professional Background</h3>
-                        <p className="text-sm text-muted-foreground">
-                          Unique blend of pharmacy and software engineering expertise
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center mt-8">
-              <a
-                href="#skills"
-                className="p-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition-all"
-                aria-label="Go to Skills section"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
+          {/* About Section */}
+
+          <About />
 
         {/* Skills Section */}
         <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-pink-50 to-purple-50">

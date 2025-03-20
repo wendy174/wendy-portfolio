@@ -28,6 +28,7 @@ How to host your website on github pages: [Watch Here](https://www.youtube.com/w
 
 ## Deployment
 This project is deployed using **GitHub Pages**. To update the live version:
+Tip: Do not create branches and merge with main! Make changes on main and push changes to git.
 
 1. Commit and push changes to the `main` branch.
 2. Run the following command to deploy changes:
