@@ -32,7 +32,7 @@ export default function Home() {
                   Check out some of my recent projects.
                 </p>
               </div>
-              <div className="mx-auto w-full max-w-5xl py-12">
+              <div className="mx-auto w-full py-12">
                 <ProjectCarousel />
               </div>
             </div>
@@ -59,6 +59,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
         {/* Experience Section */}
         <section id="experience" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-pink-50 to-purple-50">

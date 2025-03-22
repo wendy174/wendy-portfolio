@@ -69,9 +69,9 @@ export const projects: Project[] = [
       "Full stack application that enables users to browse, search and save recipes",
     image: yeschefImg,
     bullets: [
-      "Applied agile methodologies to collaborate with a team of 3 members in the development of a scalable recipe application using React and Sinatra",
-      "Constructed a robust filter functionality which allows users to refine recipe search results based on cooking difficulty, cooking time, and cuisine preferences",
-      "Heightened user interaction by enabling users to indicate their likes and dislikes for recipes, fostering a more personalized experience",
+      "Collaborated in a 3-person team using Agile to build a scalable recipe app with React and Sinatra",
+      "Built a filter to refine recipes by difficulty, time, and cuisine", 
+      "Enhanced personalization with like/dislike features for recipes"
     ],
     technologies: ["React", "Sinatra", "JavaScript"],
     githubUrl: "https://github.com/wendy174/YesChef",

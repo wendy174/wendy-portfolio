@@ -118,3 +118,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media (max-width: 768px) {
+  .project-card-content {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .project-card-content::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .project-card-content::-webkit-scrollbar-track {
+    background: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  .project-card-content::-webkit-scrollbar-thumb {
+    background: #ec4899;
+    border-radius: 10px;
+  }
+}
+
+
+
+
