@@ -5,7 +5,6 @@ import { ProjectCarousel } from "@/components/ProjectsCarousel";
 import About from './components/About.tsx'; 
 import Header from './components/Header.tsx'; 
 import Hero from './components/Hero.tsx'; 
-import projects from '../src/data/projects.json'; 
 import Skills from './components/Skills.tsx'; 
 
 
@@ -34,7 +33,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mx-auto w-full max-w-5xl py-12">
-                <ProjectCarousel projects={projects} />
+                <ProjectCarousel />
               </div>
             </div>
             <div className="flex justify-center mt-8">

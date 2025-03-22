@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
+import { projects } from "@/data/projects"
+
 
 type Project = {
   id: number
@@ -21,7 +23,7 @@ interface ProjectCarouselProps {
   projects: Project[]
 }
 
-export function ProjectCarousel({ projects }: ProjectCarouselProps) {
+export function ProjectCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const totalProjects = projects.length
   const projectsPerPage = 3
