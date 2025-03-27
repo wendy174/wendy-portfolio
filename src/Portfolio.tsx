@@ -29,7 +29,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-600">Featured Work</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Check out some of my recent projects.
+                  Check out some of my recent projects
                 </p>
               </div>
               <div className="mx-auto w-full py-12">
@@ -71,7 +71,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-600">Professional Journey</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  My professional experience and career path.
+                  My professional experience and career path
                 </p>
               </div>
               <div className="mx-auto w-full max-w-3xl py-12">
@@ -80,14 +80,14 @@ export default function Home() {
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
-                          <CardTitle className="text-pink-600">Floater Pharmacist</CardTitle>
+                          <CardTitle className="text-pink-600 text-left">Floater Pharmacist</CardTitle>
                           <CardDescription>Kinney Drugs, Burlington, VT</CardDescription>
                         </div>
                         <div className="text-sm text-muted-foreground mt-2 md:mt-0">December 2021 – Present</div>
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+                      <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground text-left">
                         <li>
                           Recommended and executed prescription system that increased efficiency by 12% and reduced
                           errors by 8%
@@ -114,7 +114,7 @@ export default function Home() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+                      <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground text-left">
                         <li>
                           Verified and dispensed prescriptions with 98% accuracy leading to 85% customer satisfaction
                           rate
@@ -167,7 +167,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-600">Academic Background</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  My educational journey and qualifications.
+                  My educational journey and qualifications
                 </p>
               </div>
               <div className="mx-auto w-full max-w-3xl py-12">
@@ -176,7 +176,7 @@ export default function Home() {
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
-                          <CardTitle className="text-pink-600">Flatiron School</CardTitle>
+                          <CardTitle className="text-pink-600 text-left">Flatiron School</CardTitle>
                           <CardDescription>Software Engineering Immersive Program</CardDescription>
                         </div>
                         <div className="text-sm text-muted-foreground mt-2 md:mt-0">March 2023</div>
@@ -203,7 +203,7 @@ export default function Home() {
                           <CardTitle className="text-pink-600">
                             Albany College of Pharmacy and Health Sciences
                           </CardTitle>
-                          <CardDescription>Doctor of Pharmacy</CardDescription>
+                          <CardDescription className="text-left">Doctor of Pharmacy</CardDescription>
                         </div>
                         <div className="text-sm text-muted-foreground mt-2 md:mt-0">Colchester, VT</div>
                       </div>
@@ -225,7 +225,7 @@ export default function Home() {
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
-                          <CardTitle className="text-pink-600">Saint Michael's College</CardTitle>
+                          <CardTitle className="text-pink-600 text-left">Saint Michael's College</CardTitle>
                           <CardDescription>Bachelor of Science (B.S) in Biology | Minor in Chemistry</CardDescription>
                         </div>
                         <div className="text-sm text-muted-foreground mt-2 md:mt-0">Colchester, VT</div>
@@ -312,7 +312,7 @@ export default function Home() {
                         </div>
                         <div className="text-left">
                           <p className="font-semibold">LinkedIn</p>
-                          <a href="#" className="text-sm text-muted-foreground hover:text-pink-600">
+                          <a href="https://www.linkedin.com/in/wendy-yeung/" className="text-sm text-muted-foreground hover:text-pink-600">
                             linkedin.com/in/wendyyeung
                           </a>
                         </div>
@@ -323,8 +323,8 @@ export default function Home() {
                         </div>
                         <div className="text-left">
                           <p className="font-semibold">GitHub</p>
-                          <a href="#" className="text-sm text-muted-foreground hover:text-pink-600">
-                            github.com/wendyyeung
+                          <a href="https://github.com/wendy174" className="text-sm text-muted-foreground hover:text-pink-600">
+                            github.com/wendy174
                           </a>
                         </div>
                       </div>

@@ -56,6 +56,8 @@ export function ProjectCarousel() {
 
   const currentProject = projects[currentIndex]
 
+  const hasGithubUrl = currentProject.githubUrl; 
+
   return (
     <div className="w-full relative">
       {/* Previous Button */}
@@ -74,7 +76,7 @@ export function ProjectCarousel() {
       <div className="px-8 md:px-16 transition-all duration-500">
         <Card
           key={currentProject.id}
-          className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur flex flex-col md:flex-row max-w-6xl mx-auto transform transition-all duration-300 hover:shadow-lg hover:border-pink-300"
+          className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur flex flex-col md:flex-row max-w-5xl mx-auto transform transition-all duration-300 hover:shadow-lg hover:border-pink-300"
         >
           <div className="md:w-1/2">
             <div className="relative h-[350px] md:h-[500px] overflow-hidden">
@@ -100,7 +102,7 @@ export function ProjectCarousel() {
               <div className="space-y-6">
                 <div>
                   <h4 className="text-base font-medium text-pink-600 mb-3">Key Features:</h4>
-                  <ul className="list-disc pl-5 space-y-3 text-base text-muted-foreground">
+                  <ul className="list-disc pl-6 space-y-3 text-base text-muted-foreground">
                     {currentProject.bullets.map((bullet, index) => (
                       <li key={index}>{bullet}</li>
                     ))}
@@ -120,22 +122,25 @@ export function ProjectCarousel() {
               </div>
             </CardContent>
 
-            <CardFooter className="flex justify-between mt-auto border-t border-pink-100 pt-6 pb-6">
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-pink-600 border-pink-200 hover:bg-pink-50 transition-colors"
-              >
-                <a
-                  href={currentProject.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <Github className="h-5 w-5" /> GitHub
-                </a>
-              </Button>
-              <Button size="lg" className="bg-pink-600 hover:bg-pink-700 transition-colors">
+            <CardFooter className="flex justify-between mt-auto border-t border-pink-100 pt-6">
+              { hasGithubUrl && 
+                  <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-pink-600 border-pink-200 hover:bg-pink-50 transition-colors"
+                  >
+                  <a
+                    href={currentProject.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <Github className="h-5 w-5" /> GitHub
+                  </a>
+                  </Button>
+              }
+
+              <Button size="lg" className="bg-pink-600 hover:bg-pink-700 transition-colors ml-auto">
                 <a
                   href={currentProject.demoUrl}
                   target="_blank"
