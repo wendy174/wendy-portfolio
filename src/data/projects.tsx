@@ -3,6 +3,7 @@ import giftBoutiqueImg from "@/assets/gift_boutique.jpg";
 import asianBitesImg from "@/assets/asian_bites.jpg";
 import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
+import groceryAgentImg from "@/assets/ai_agent.png"; 
 
 
 export type Project = {
@@ -19,6 +20,21 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "AI Agent for Weekly Grocery Deals",
+    description:
+      "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
+    image: groceryAgentImg,
+    bullets: [
+      "Automates flyer ingestion weekly from APIs, PDFs, and images using n8n workflows",
+      "Leverages RAG to match shopping lists with deals across multiple stores",
+      "Sends real-time SMS alerts via Twilio on workflow and extraction errors",
+    ],
+    technologies: ["n8n", "Pinecone", "Claude", "OpenAI", "LlamaParse", "Twilio"],
+    githubUrl: "",
+    demoUrl: "https://www.loom.com/share/0821ff483ad4417aa6f61fae54d013c1",
+  },
+  {
+    id: 2,
     title: "Messaging Platform",
     description:
       "A messaging platform built with Retool and Twilio, enabling individualized or bulk messaging and phone number information lookups",
@@ -33,7 +49,7 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/65f8104505a64e70b957c35a563eb2bb",
   },
   {
-    id: 2,
+    id: 3,
     title: "Gift Boutique",
     description:
       "Online marketplace that delivers a user-friendly interface for customers to explore and purchase unique gifts",
@@ -48,7 +64,7 @@ export const projects: Project[] = [
     demoUrl: "http://giftboutique.wendyprojects.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Asian Bites",
     description:
       "Comprehensive guide to finding the best Asian restaurants with reviews from a community of food enthusiasts",
@@ -63,7 +79,7 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/debd95da51da4ee3ae627a924cccfe6a",
   },
   {
-    id: 4,
+    id: 5,
     title: "YesChef",
     description:
       "Full stack application that enables users to browse, search and save recipes",
@@ -78,7 +94,7 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/ff887918a7c44384894fdfd4be11ee49",
   },
   {
-    id: 5,
+    id: 6,
     title: "XKCD Comic",
     description:
       "Front end application that enables users to explore a diverse collection of 20+ comics",
