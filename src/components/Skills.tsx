@@ -35,8 +35,6 @@ const Skills: React.FC = () => {
                         "Material UI",
                         "Tailwind",
                         "Shadcn", 
-                        "Retool",
-                        "Appsmith",
                       ].map((skill) => (
                         <Badge key={skill} className="bg-pink-100 text-pink-600 hover:bg-pink-200">
                           {skill}
@@ -60,7 +58,7 @@ const Skills: React.FC = () => {
                         "MongoDB",
                         "REST APIs",
                         "Node.js",
-                        "Firebase",
+                        "Pinecone"
                       ].map((skill) => (
                         <Badge key={skill} className="bg-pink-100 text-pink-600 hover:bg-pink-200">
                           {skill}
@@ -75,7 +73,36 @@ const Skills: React.FC = () => {
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
-                      {["Docker", "Git", "GitHub", "Postman", "Twilio", "Excel", "Google Sheets"].map((skill) => (
+                      {["Docker",
+                        "Git",
+                        "GitHub",
+                        "Postman",
+                        "Firebase",
+                        "Excel",
+                        "Google Sheets"].map((skill) => (
+                        <Badge key={skill} className="bg-pink-100 text-pink-600 hover:bg-pink-200">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-pink-200 bg-white/80 backdrop-blur">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-pink-600">AI & Low-Code Platforms</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                          "OpenAI",
+                          "Anthropic",
+                          "LlamaParse",
+                          "Retool",
+                          "Appsmith",
+                          "n8n",
+                          "Twilio"
+                      ].map((skill) => (
                         <Badge key={skill} className="bg-pink-100 text-pink-600 hover:bg-pink-200">
                           {skill}
                         </Badge>

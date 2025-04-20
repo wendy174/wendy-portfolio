@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
                     <a href="#projects">View My Work</a>
                   </Button>
                   <Button className="bg-pink-200 text-pink-800 hover:bg-pink-300">
-                    <a href="https://docs.google.com/document/d/1UDAqAEMpvZ7AbyWASgQ_s1xICGX0czrb5e5MFTVtY_g/edit?usp=sharing" target="_blank" className="flex items-center gap-1" rel="noreferrer">
+                    <a href="https://docs.google.com/document/d/1kta2oF36xkM4cp67sHv6F4wlkMwYyEf6zoI7nR7Vw0s/edit?usp=sharing" target="_blank" className="flex items-center gap-1" rel="noreferrer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
