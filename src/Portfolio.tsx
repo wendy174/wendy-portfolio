@@ -284,8 +284,8 @@ export default function Home() {
                   Have a project in mind? Let's work together!
                 </p>
               </div>
-              <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
-                <Card className="border-pink-200 bg-white/80 backdrop-blur">
+              <div className="mx-auto grid max-w-5xl gap-6 py-12">
+                <Card className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur-lg shadow-lg max-w-xl w-full p-8">
                   <CardHeader>
                     <CardTitle className="text-pink-600">Contact Information</CardTitle>
                     <CardDescription>Feel free to reach out through any of these channels.</CardDescription>
@@ -331,61 +331,18 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
-                <Card className="border-pink-200 bg-white/80 backdrop-blur">
-                  <CardHeader>
-                    <CardTitle className="text-pink-600">Send Me a Message</CardTitle>
-                    <CardDescription>I'll get back to you as soon as possible.</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <form className="grid gap-4">
-                      <div className="grid gap-2">
-                        <label
-                          htmlFor="name"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Name
-                        </label>
-                        <input
-                          id="name"
-                          className="flex h-10 w-full rounded-md border border-pink-200 bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          placeholder="Your name"
-                        />
-                      </div>
-                      <div className="grid gap-2">
-                        <label
-                          htmlFor="email"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Email
-                        </label>
-                        <input
-                          id="email"
-                          type="email"
-                          className="flex h-10 w-full rounded-md border border-pink-200 bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          placeholder="Your email"
-                        />
-                      </div>
-                      <div className="grid gap-2">
-                        <label
-                          htmlFor="message"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Message
-                        </label>
-                        <textarea
-                          id="message"
-                          className="flex min-h-[120px] w-full rounded-md border border-pink-200 bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          placeholder="Your message"
-                        />
-                      </div>
-                      <Button className="w-full bg-pink-600 hover:bg-pink-700">Send Message</Button>
-                    </form>
-                  </CardContent>
-                </Card>
+
               </div>
             </div>
           </div>
         </section>
+
+
+
+
+
+          
+
       </main>
 
       {/* Footer */}
