@@ -26,6 +26,11 @@ How to host your website on github pages: [Watch Here](https://www.youtube.com/w
    cd wendy-portfolio
    ```
 
+## Review 
+   ```sh
+   cd npm run dev 
+   ```
+
 ## Deployment
 This project is deployed using **GitHub Pages**. To update the live version:
 Tip: Do not create branches and merge with main! Make changes on main and push changes to git.

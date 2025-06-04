@@ -4,6 +4,7 @@ import asianBitesImg from "@/assets/asian_bites.jpg";
 import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
+import chinatownImg from "@/assets/chinatown.png"; 
 
 
 export type Project = {
@@ -25,11 +26,11 @@ export const projects: Project[] = [
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
     image: groceryAgentImg,
     bullets: [
-      "Automates flyer ingestion weekly from APIs, PDFs, and images using n8n workflows",
+      "Automates flyer ingestion weekly from APIs and PDFs using n8n workflows",
       "Leverages RAG to match shopping lists with deals across multiple stores",
       "Sends real-time SMS alerts via Twilio on workflow and extraction errors",
     ],
-    technologies: ["n8n", "Pinecone", "Claude", "OpenAI", "LlamaParse", "Twilio"],
+    technologies: ["n8n", "Pinecone", "Claude", "OpenAI", "Crawl4AI", "Adobe", "Twilio"],
     githubUrl: "",
     demoUrl: "https://www.loom.com/share/0821ff483ad4417aa6f61fae54d013c1",
   },
@@ -50,6 +51,21 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    title: "Chinatown Restaurant",
+    description: "A full-stack takeout ordering app with Google login, seamless menu browsing, and a user-specific cart system for quick and convenient checkout.", 
+    image: chinatownImg,
+    bullets: [
+      "Designed a responsive landing page featuring a dynamic food gallery and embedded Google Maps to pinpoint restaurant location",
+      "Used Clerk for authentication via Google OAuth and secure user session handling",
+      "Engineered a responsive menu page with a sticky category navigation bar for instant section jumps and real‑time item‑count highlights"
+    ],
+    technologies: ["React", "Express", "MongoDB", "Tailwind","Shadcn", "Docker", "Clerk", "Google Maps API"]
+    ,
+    githubUrl: "https://github.com/wendy174/chinatownVT",
+    demoUrl: "https://www.loom.com/share/b3be5c7b5e9640ff95f6d4318e298dfb",
+  },
+  {
+    id: 4,
     title: "Gift Boutique",
     description:
       "Online marketplace that delivers a user-friendly interface for customers to explore and purchase unique gifts",
@@ -64,7 +80,7 @@ export const projects: Project[] = [
     demoUrl: "http://giftboutique.wendyprojects.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Asian Bites",
     description:
       "Comprehensive guide to finding the best Asian restaurants with reviews from a community of food enthusiasts",
@@ -79,7 +95,7 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/debd95da51da4ee3ae627a924cccfe6a",
   },
   {
-    id: 5,
+    id: 6,
     title: "YesChef",
     description:
       "Full stack application that enables users to browse, search and save recipes",
@@ -94,7 +110,7 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/ff887918a7c44384894fdfd4be11ee49",
   },
   {
-    id: 6,
+    id: 7,
     title: "XKCD Comic",
     description:
       "Front end application that enables users to explore a diverse collection of 20+ comics",
