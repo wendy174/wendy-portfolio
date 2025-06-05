@@ -32,7 +32,7 @@ export const projects: Project[] = [
     ],
     technologies: ["n8n", "Pinecone", "Claude", "OpenAI", "Crawl4AI", "Adobe", "Twilio"],
     githubUrl: "",
-    demoUrl: "https://www.loom.com/share/0821ff483ad4417aa6f61fae54d013c1",
+    demoUrl: "https://www.loom.com/share/7f9f7e763b1a4b259c89f5ea09e1d058",
   },
   {
     id: 2,

@@ -79,7 +79,8 @@ const Skills: React.FC = () => {
                         "Postman",
                         "Firebase",
                         "Excel",
-                        "Google Sheets"].map((skill) => (
+                        "Google Sheets", 
+                        "Crawl4AI"].map((skill) => (
                         <Badge key={skill} className="bg-pink-100 text-pink-600 hover:bg-pink-200">
                           {skill}
                         </Badge>
