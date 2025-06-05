@@ -75,6 +75,32 @@ export default function Home() {
               </div>
               <div className="mx-auto w-full max-w-3xl py-12">
                 <div className="space-y-8">
+
+                  <Card className="border-pink-200 bg-white/80 backdrop-blur">
+                    <CardHeader>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                          <CardTitle className="text-pink-600 text-left">Software Engineer</CardTitle>
+                          <CardDescription>Freelance, Brooklyn, NY</CardDescription>
+                        </div>
+                        <div className="text-sm text-muted-foreground mt-2 md:mt-0">September 2024 - Present</div>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground text-left">
+                        <li>
+                          Designed and built product demos showcasing real-world applications of web development, automation, and API integrations
+                        </li>
+                        <li>
+                          Optimized backend logic and database queries to improve performance and reduce response times
+                        </li>
+                        <li>
+                          Continuously explored and implemented new technologies to enhance usability, security, and automation in product demos
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
                   <Card className="border-pink-200 bg-white/80 backdrop-blur">
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -82,7 +108,7 @@ export default function Home() {
                           <CardTitle className="text-pink-600 text-left">Floater Pharmacist</CardTitle>
                           <CardDescription>Kinney Drugs, Burlington, VT</CardDescription>
                         </div>
-                        <div className="text-sm text-muted-foreground mt-2 md:mt-0">December 2021 – Present</div>
+                        <div className="text-sm text-muted-foreground mt-2 md:mt-0">December 2021 – September 2024</div>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -102,6 +128,8 @@ export default function Home() {
                       </ul>
                     </CardContent>
                   </Card>
+
+
                   <Card className="border-pink-200 bg-white/80 backdrop-blur">
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -129,6 +157,7 @@ export default function Home() {
                       </ul>
                     </CardContent>
                   </Card>
+
                 </div>
               </div>
             </div>
