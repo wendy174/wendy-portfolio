@@ -75,7 +75,7 @@ export function ProjectCarousel() {
       {/* Single Project Layout - Now Larger */}
       <div className="px-8 md:px-16 transition-all duration-500">
         <Card
-          key={currentProject.id}
+          key={currentProject.title}
           className="overflow-hidden border-pink-200 bg-white/80 backdrop-blur flex flex-col md:flex-row max-w-5xl mx-auto transform transition-all duration-300 hover:shadow-lg hover:border-pink-300"
         >
           <div className="md:w-1/2">

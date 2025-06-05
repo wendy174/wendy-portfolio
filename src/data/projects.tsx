@@ -8,7 +8,6 @@ import chinatownImg from "@/assets/chinatown.png";
 
 
 export type Project = {
-  id: number;
   title: string;
   description: string;
   image: string;
@@ -19,9 +18,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    id: 1,
-    title: "AI Agent for Weekly Grocery Deals",
+  { title: "AI Agent for Weekly Grocery Deals",
     description:
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
     image: groceryAgentImg,
@@ -35,7 +32,6 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/7f9f7e763b1a4b259c89f5ea09e1d058",
   },
   {
-    id: 2,
     title: "Messaging Platform",
     description:
       "A messaging platform built with Retool and Twilio, enabling individualized or bulk messaging and phone number information lookups",
@@ -50,7 +46,6 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/65f8104505a64e70b957c35a563eb2bb",
   },
   {
-    id: 3,
     title: "Chinatown Restaurant",
     description: "A full-stack takeout ordering app with Google login, seamless menu browsing, and a user-specific cart system for quick and convenient checkout.", 
     image: chinatownImg,
@@ -65,7 +60,6 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/b3be5c7b5e9640ff95f6d4318e298dfb",
   },
   {
-    id: 4,
     title: "Gift Boutique",
     description:
       "Online marketplace that delivers a user-friendly interface for customers to explore and purchase unique gifts",
@@ -80,7 +74,6 @@ export const projects: Project[] = [
     demoUrl: "http://giftboutique.wendyprojects.com/",
   },
   {
-    id: 5,
     title: "Asian Bites",
     description:
       "Comprehensive guide to finding the best Asian restaurants with reviews from a community of food enthusiasts",
@@ -95,7 +88,6 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/debd95da51da4ee3ae627a924cccfe6a",
   },
   {
-    id: 6,
     title: "YesChef",
     description:
       "Full stack application that enables users to browse, search and save recipes",
@@ -110,7 +102,6 @@ export const projects: Project[] = [
     demoUrl: "https://www.loom.com/share/ff887918a7c44384894fdfd4be11ee49",
   },
   {
-    id: 7,
     title: "XKCD Comic",
     description:
       "Front end application that enables users to explore a diverse collection of 20+ comics",
