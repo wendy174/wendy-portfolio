@@ -89,6 +89,9 @@ export default function Home() {
                     <CardContent>
                       <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground text-left">
                         <li>
+                          Developed full-stack applications with focus on user experience and clean, functional design
+                        </li>
+                        <li>
                           Designed and built product demos showcasing real-world applications of web development, automation, and API integrations
                         </li>
                         <li>
