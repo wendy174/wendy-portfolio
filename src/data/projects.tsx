@@ -21,57 +21,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "testing",
-    description: "new",
-    image: testingImg,
-    bullets: [
-    "one",
-    "two",
-    "three"
-],
-    technologies: [
-    "n8n",
-    "react"
-],
-    githubUrl: "www",
-    demoUrl: "www",
-  },
-
-  {
-    title: "testingProject",
-    description: "new project",
-    image: testingProjectImg,
-    bullets: [
-    "one",
-    "two",
-    "three"
-],
-    technologies: [
-    "n8n",
-    "react"
-],
-    githubUrl: "www",
-    demoUrl: "www",
-  },
-
-  {
-    title: "testproject",
-    description: "testing",
-    image: testprojectImg,
-    bullets: [
-    "one",
-    "two",
-    "three"
-],
-    technologies: [
-    "n8n",
-    "react"
-],
-    githubUrl: "www",
-    demoUrl: "www",
-  },
-
   { title: "AI Agent for Weekly Grocery Deals",
     description:
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
