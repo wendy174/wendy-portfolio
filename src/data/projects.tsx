@@ -8,6 +8,7 @@ import chinatownImg from "@/assets/chinatown.png";
 import testprojectImg from "@/assets/testproject.jpeg";
 import testingProjectImg from "@/assets/testingProject.jpeg";
 import testingImg from "@/assets/testing.jpeg";
+import testingProjectImg from "@/assets/testingProject.jpeg";
 
 
 export type Project = {
@@ -21,6 +22,23 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "testingProject",
+    description: "new",
+    image: testingProjectImg,
+    bullets: [
+    "one",
+    "two",
+    "three"
+],
+    technologies: [
+    "n8n",
+    "react"
+],
+    githubUrl: "www",
+    demoUrl: "",
+  },
+
   { title: "AI Agent for Weekly Grocery Deals",
     description:
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
