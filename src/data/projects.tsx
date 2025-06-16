@@ -5,8 +5,6 @@ import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
 import chinatownImg from "@/assets/chinatown.png"; 
-import testingImg from "@/assets/testing.jpeg";
-
 
 export type Project = {
   title: string;
@@ -18,25 +16,7 @@ export type Project = {
   demoUrl: string;
 };
 
-export const projects: Project[] = [
-  {
-    title: "testing",
-    description: "testing",
-    image: testingImg,
-    bullets: [
-    "one",
-    "two",
-    "three"
-],
-    technologies: [
-    "n8n",
-    "react"
-],
-    githubUrl: "",
-    demoUrl: "www",
-  },
-
-    
+export const projects: Project[] = [    
   { title: "AI Agent for Weekly Grocery Deals",
     description:
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
