@@ -6,6 +6,7 @@ import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
 import chinatownImg from "@/assets/chinatown.png"; 
 import testingNewImg from "@/assets/testingNew.jpeg";
+import oneImg from "@/assets/one.jpeg";
 
 
 export type Project = {
@@ -19,6 +20,23 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "one",
+    description: "one",
+    image: oneImg,
+    bullets: [
+    "one",
+    "two",
+    "three"
+],
+    technologies: [
+    "n8n",
+    "ruby"
+],
+    githubUrl: "",
+    demoUrl: "",
+  },
+
   {
     title: "testingNew",
     description: "me",
