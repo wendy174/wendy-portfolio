@@ -25,6 +25,7 @@ How to host your website on github pages: [Watch Here](https://www.youtube.com/w
    ```sh
    cd wendy-portfolio
    ```
+3. 
 
 ## Review 
    ```sh
