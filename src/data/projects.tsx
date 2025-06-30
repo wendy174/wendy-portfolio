@@ -5,6 +5,7 @@ import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
 import chinatownImg from "@/assets/chinatown.png"; 
+import coding-catImg from "@/assets/coding-cat.jpeg";
 
 export type Project = {
   title: string;
@@ -16,7 +17,24 @@ export type Project = {
   demoUrl: string;
 };
 
-export const projects: Project[] = [    
+export const projects: Project[] = [
+  {
+    title: "AI Content Orchestrator – Demo",
+    description: "Unified automation platform that orchestrates AI-powered content management and synchronization across professional digital channels",
+    image: coding-catImg,
+    bullets: [
+    "Engineered a sophisticated multi-agent system using n8n workflows and React, enabling intelligent orchestration of AI-driven content generation and distribution",
+    "Implemented real-time content validation through Twilio SMS integration, establishing human-in-the-loop verification for LinkedIn post authenticity",
+    "Developed an automated cross-platform synchronization pipeline ensuring consistent content delivery across personal website, dynamic resume, and professional networks"
+],
+    technologies: [
+    "n8n",
+    "react"
+],
+    githubUrl: "https://github.com/ww",
+    demoUrl: "http://www",
+  },
+    
   { title: "AI Agent for Weekly Grocery Deals",
     description:
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
