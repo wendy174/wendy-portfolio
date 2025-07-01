@@ -17,8 +17,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-
-    
   { title: "AI Agent for Weekly Grocery Deals",
     description:
       "RAG-powered AI assistant that helps users find the best weekly grocery deals across multiple stores through natural-language queries",
