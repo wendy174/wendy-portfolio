@@ -5,7 +5,6 @@ import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
 import chinatownImg from "@/assets/chinatown.png"; 
-import codingCatImg from "@/assets/codingCat.jpeg";
 
 export type Project = {
   title: string;
@@ -18,25 +17,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "AI Content Orchestrator",
-    description: "Unified automation platform that orchestrates AI-powered content management and synchronization across professional digital channels",
-    image: codingCatImg,
-    bullets: [
-    "Engineered a sophisticated multi-agent system using n8n workflows and React, enabling intelligent orchestration of AI-driven content generation and distribution",
-    "Implemented real-time content validation through Twilio SMS integration, establishing human-in-the-loop verification for LinkedIn post authenticity",
-    "Developed an automated cross-platform synchronization pipeline ensuring consistent content delivery across personal website, dynamic resume, and professional networks"
-],
-    technologies: [
-    "n8n",
-    "React",
-    "Twilio",
-    "OpenAI API",
-    "JavaScript"
-],
-    githubUrl: "https://github.com/example/ai-content-orchestrator",
-    demoUrl: "https://demo.aicontentorchestrator.com",
-  },
 
   { title: "AI Agent for Weekly Grocery Deals",
     description:
