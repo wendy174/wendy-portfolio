@@ -5,7 +5,6 @@ import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
 import chinatownImg from "@/assets/chinatown.png"; 
-import projectAssistantImg from "@/assets/projectAssistant.png";
 
 export type Project = {
   title: string;
@@ -18,16 +17,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "",
-    description: "",
-    image: projectAssistantImg,
-    bullets: [],
-    technologies: [],
-    githubUrl: "https://github.com",
-    demoUrl: "https://www.test.com",
-  },
-
 
   { title: "AI Agent for Weekly Grocery Deals",
     description:
