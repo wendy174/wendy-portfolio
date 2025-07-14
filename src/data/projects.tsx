@@ -20,29 +20,28 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "AI Powered Publishing Assistant",
-    description: "An automated workflow that streamlines content publishing across LinkedIn, portfolio websites, and resumes using AI-driven content optimization",
+    description: "Project publishing automation tool built with n8n that synchronizes updates across portfolio, resume, and LinkedIn",
     image: projectAssistantImg,
     bullets: [
-    "Engineered a multi-platform publishing automation using n8n workflows integrated with Anthropic's AI and MongoDB for coordinated content distribution",
-    "Implemented intelligent content enhancement pipeline with real-time progress notifications via Twilio SMS and comprehensive email reporting",
-    "Built end-to-end API integrations with LinkedIn, Google Workspace, and GitHub to synchronize project updates across professional platforms"
+    "Integrated Twilio SMS-based approval workflows for interactive content review, utilizing real-time feedback to enhance AI-generated content",
+    "Leverages APITemplate for resume updates, preserving template design while integrating latest projects",
+    "Implemented email notification system that provides summaries and links to newly published content across all platforms"
 ],
     technologies: [
-    "Twilio SMS",
+    "Twilio",
     "AI Agents",
     "Anthropic",
+    "OpenAI",
     "Linkedin",
     "Github",
     "Google Docs/Drive/Gmail",
-    "MongoDb",
-    "API Template",
+    "MongoDB",
+    "APITemplate",
     "n8n"
 ],
-    githubUrl: "https://github.com",
-    demoUrl: "https://www.test.com",
+    githubUrl: "",
+    demoUrl: "https://www.youtube.com/watch?v=CN6PUL5qkPE",
   },
-
-
 
   { title: "AI Agent for Weekly Grocery Deals",
     description:
