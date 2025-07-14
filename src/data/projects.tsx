@@ -5,7 +5,6 @@ import yeschefImg from "@/assets/yeschef.jpg";
 import comicImg from "@/assets/comic.jpg";
 import groceryAgentImg from "@/assets/ai_agent.png"; 
 import chinatownImg from "@/assets/chinatown.png"; 
-import projectAssistantImg from "@/assets/projectAssistant.png";
 
 export type Project = {
   title: string;
@@ -18,29 +17,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "AI Powered Publishing Assistant",
-    description: "An automated workflow that streamlines content publishing across LinkedIn, portfolio websites, and resumes using AI-driven content optimization",
-    image: projectAssistantImg,
-    bullets: [
-    "Engineered a multi-platform publishing automation using n8n workflows integrated with Anthropic's AI and MongoDB for coordinated content distribution",
-    "Implemented intelligent content enhancement pipeline with real-time progress notifications via Twilio SMS and comprehensive email reporting",
-    "Built end-to-end API integrations with LinkedIn, Google Workspace, and GitHub to synchronize project updates across professional platforms"
-],
-    technologies: [
-    "Twilio SMS",
-    "AI Agents",
-    "Anthropic",
-    "Linkedin",
-    "Github",
-    "Google Docs/Drive/Gmail",
-    "MongoDb",
-    "API Template",
-    "n8n"
-],
-    githubUrl: "https://github.com",
-    demoUrl: "https://www.test.com",
-  },
 
 
   { title: "AI Agent for Weekly Grocery Deals",
